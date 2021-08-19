@@ -45,8 +45,10 @@ else:
     st.write(score)
     if predictions == 1:
       st.text("The image shows normal EEG report")
-    else:
+    elif predictions == 0:
       st.text("The image shows abnormal EEG report")
+    else:
+        st.text("The image is not a valid brain image")
    # print(
    # "This image most likely belongs to {} with a {:.2f} percent confidence."
     #.format(class_names[np.argmax(score)], 100 * np.max(score))
