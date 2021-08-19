@@ -44,7 +44,7 @@ else:
     st.write(predictions)
     st.write(score)
     if predictions == 1:
-      st.text("The image shows abnormal EEG report")
+      st.text("The image shows normal EEG report")
     else:
       st.text("The image shows abnormal EEG report")
    # print(
